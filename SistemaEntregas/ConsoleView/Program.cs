@@ -60,7 +60,7 @@ namespace ConsoleView
                     case OpcoesMenuPrincipal.PesquisarCliente:
                         PesquisarCliente();
                         break;
-
+             
                     case OpcoesMenuPrincipal.ListarClientesCadastrados:
                         ListarTodosClientes();
                         break;
@@ -95,6 +95,7 @@ namespace ConsoleView
         {
             Cliente cli = new Cliente();
 
+            Console.WriteLine("");
             Console.Write("Digite seu nome: ");
             cli.Nome = Console.ReadLine();
 
