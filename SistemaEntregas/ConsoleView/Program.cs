@@ -19,19 +19,18 @@ namespace ConsoleView
             Sair = 7
         }
 
-        private static OpcoesMenuPrincipal Menu()// menu
+        private static OpcoesMenuPrincipal Menu()
         {
-            Console.WriteLine("Escolha sua opcao");
-            Console.WriteLine("");
-
-            Console.WriteLine(" - Clientes - ");
+            Console.WriteLine(" ----------------------------- ");
+            Console.WriteLine(" -- Clientes ----------------- ");
             Console.WriteLine("1 - Cadastrar Novo");
             Console.WriteLine("2 - Pesquisar Cliente");
             Console.WriteLine("3 - Listar Clientes Cadastrados");
             Console.WriteLine("4 - Editar Cliente");
             Console.WriteLine("5 - Excluir Cliente");
 
-            Console.WriteLine(" - Geral -");
+            Console.WriteLine(" ------------------------------");
+            Console.WriteLine(" -- Geral----------------------");
             Console.WriteLine("6 - Limpar Tela");
             Console.WriteLine("7 - Sair");
 
@@ -96,26 +95,20 @@ namespace ConsoleView
         {
             Cliente cli = new Cliente();
 
-            Console.Write("Digite o nome: ");
+            Console.Write("Digite seu nome: ");
             cli.Nome = Console.ReadLine();
 
-            Console.WriteLine();
-
-            Console.Write("Digite o cpf: ");
+            Console.Write("Digite seu cpf: ");
             cli.Cpf = Console.ReadLine();
 
-            // ... Endereco
+            //Endereco
             Endereco end = new Endereco();
 
             Console.Write("Digite o nome da rua: ");
             end.Rua = Console.ReadLine();
 
-            Console.WriteLine();
-
             Console.Write("Digite o numero: ");
             end.Numero = int.Parse(Console.ReadLine());
-
-            Console.WriteLine();
 
             Console.Write("Digite o complemento: ");
             end.Complemento = Console.ReadLine();
