@@ -19,7 +19,7 @@ namespace ConsoleView
             Sair = 7
         }
 
-        private static OpcoesMenuPrincipal Menu()/ menu
+        private static OpcoesMenuPrincipal Menu()// menu
         {
             Console.WriteLine("Escolha sua opcao");
             Console.WriteLine("");
