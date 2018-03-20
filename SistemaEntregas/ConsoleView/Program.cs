@@ -102,6 +102,13 @@ namespace ConsoleView
             Console.Write("Digite seu cpf: ");
             cli.Cpf = Console.ReadLine();
 
+           
+
+            return cli;
+        }
+        private static Endereco CadastrarEndereco()
+        {
+
             //Endereco
             Endereco end = new Endereco();
 
@@ -116,7 +123,6 @@ namespace ConsoleView
 
             cli._Endereco = end;
 
-            return cli;
         }
 
         private static void PesquisarCliente()
